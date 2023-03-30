@@ -45,7 +45,7 @@
         @Html.TextAreaFor(m => m.SkillSet, new { @class = "form-control" })
         @Html.ValidationMessageFor(model => model.SkillSet)
     </div>
-    <input type="submit" id="btnWrite" formaction="@Url.Action("Submit")" value="Submit" />
+    <input class="btn" type="submit" id="btnWrite" formaction="@Url.Action("Submit")" value="Submit" />
 }
 @if(TempData["Message"] != null)
             {

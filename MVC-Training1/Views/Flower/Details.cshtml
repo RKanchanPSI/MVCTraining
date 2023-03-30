@@ -1,0 +1,42 @@
+﻿@model MVC_Training1.ViewModel.FlowerViewModel
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .image-size {
+        max-width: 200px;
+        max-height: 200px;
+    }
+</style>
+@if (ViewBag.Flower != null)
+{
+    <h2>Details</h2>
+
+    <div>
+        <span>@Model.SelectedFlower</span>
+    </div>
+    <h3>Image of selected Item:</h3>
+    if (ViewBag.Flower.Id == 1)
+    {
+        <img class="image-size" src="~/Content/images/jar.png" />
+    }
+    if (ViewBag.Flower.Id == 2)
+    {
+        <img class="image-size" src="~/Content/images/lily.png" />
+    }
+    if (ViewBag.Flower.Id == 3)
+    {
+        <img class="image-size" src="~/Content/images/daisy.png" />
+    }
+    if (ViewBag.Flower.Id == 4)
+    {
+        <img class="image-size" src="~/Content/images/sunflower.png" />
+    }
+}
+else
+{
+    <h3>No item selected</h3>
+}
+
+

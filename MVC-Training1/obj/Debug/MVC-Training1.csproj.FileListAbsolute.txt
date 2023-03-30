@@ -94,3 +94,6 @@ D:\.net-Training\MVC\MVC-Training1\MVC-Training1\obj\Debug\MVC-Training1.csproj.
 D:\.net-Training\MVC\MVC-Training1\MVC-Training1\obj\Debug\MVC_Training1.Migrations.populateStore.resources
 D:\.net-Training\MVC\MVC-Training1\MVC-Training1\obj\Debug\MVC_Training1.Migrations.UpdatedStore.resources
 D:\.net-Training\MVC\MVC-Training1\MVC-Training1\obj\Debug\MVC_Training1.Migrations.updateStoreURL.resources
+D:\.net-Training\MVC\MVC-Training1\MVC-Training1\obj\Debug\MVC_Training1.Migrations.PopulateFlowers.resources
+D:\.net-Training\MVC\MVC-Training1\MVC-Training1\obj\Debug\MVC_Training1.Migrations.PopulateFlowersData.resources
+D:\.net-Training\MVC\MVC-Training1\MVC-Training1\obj\Debug\MVC_Training1.Migrations.modifyFlowersModel.resources

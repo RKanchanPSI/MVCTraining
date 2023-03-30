@@ -21,6 +21,8 @@ namespace MVC_Training1.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<StoreModels> Stores { get; set; }
+        public DbSet<Flower> Flowers { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

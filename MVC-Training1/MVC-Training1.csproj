@@ -184,10 +184,12 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AddOrSubtractController.cs" />
     <Compile Include="Controllers\ButtonColorController.cs" />
+    <Compile Include="Controllers\FlowerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PaymentController.cs" />
     <Compile Include="Controllers\StoreController.cs" />
+    <Compile Include="Controllers\UniqueController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -208,18 +210,33 @@
     <Compile Include="Migrations\202303150834355_updateStoreURL.designer.cs">
       <DependentUpon>202303150834355_updateStoreURL.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202303211126295_PopulateFlowers.cs" />
+    <Compile Include="Migrations\202303211126295_PopulateFlowers.designer.cs">
+      <DependentUpon>202303211126295_PopulateFlowers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303211145028_PopulateFlowersData.cs" />
+    <Compile Include="Migrations\202303211145028_PopulateFlowersData.designer.cs">
+      <DependentUpon>202303211145028_PopulateFlowersData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303241037552_modifyFlowersModel.cs" />
+    <Compile Include="Migrations\202303241037552_modifyFlowersModel.designer.cs">
+      <DependentUpon>202303241037552_modifyFlowersModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AddOrSubtractModels.cs" />
     <Compile Include="Models\ButtonColorModels.cs" />
+    <Compile Include="Models\Flower.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Items.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Payment.cs" />
     <Compile Include="Models\StoreModels.cs" />
+    <Compile Include="Models\Unique.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModel\FlowerViewModel.cs" />
     <Compile Include="ViewModel\StoreViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -286,6 +303,9 @@
     <Content Include="Views\Payment\AddCard.cshtml" />
     <Content Include="Views\User\Index.cshtml" />
     <Content Include="Views\User\View.cshtml" />
+    <Content Include="Views\Flower\Index.cshtml" />
+    <Content Include="Views\Flower\Details.cshtml" />
+    <Content Include="Views\Unique\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -315,6 +335,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202303150834355_updateStoreURL.resx">
       <DependentUpon>202303150834355_updateStoreURL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303211126295_PopulateFlowers.resx">
+      <DependentUpon>202303211126295_PopulateFlowers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303211145028_PopulateFlowersData.resx">
+      <DependentUpon>202303211145028_PopulateFlowersData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303241037552_modifyFlowersModel.resx">
+      <DependentUpon>202303241037552_modifyFlowersModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

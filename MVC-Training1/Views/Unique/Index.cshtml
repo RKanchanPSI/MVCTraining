@@ -1,0 +1,30 @@
+﻿@model MVC_Training1.Models.Unique
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (ViewBag.UniqueDigits == null)
+{
+    <h2>Enter the number:</h2>
+
+    using (Html.BeginForm())
+    {
+        <div class="form-group">
+            @Html.LabelFor(m => m.Number)
+            @Html.TextBoxFor(m => m.Number, new { @class = "form-control" })
+        </div>
+        <button class="btn" type="submit">Submit</button>
+    }
+}
+else
+{ <h2>Distinct numbers entered are:</h2>
+
+    <div>
+        @foreach (char c in ViewBag.UniqueDigits)
+        {
+            <span> @c</span>
+        }
+    </div>
+}
+
