@@ -24,7 +24,7 @@ namespace MVC_Training1.Models
         [Required]
         [Display(Name = "Date Of Birth")]
         [Range(typeof(DateTime), "01-01-1900", "01-01-2090",
-                    ErrorMessage = "Date of Birth Must be between 01-01-1970 and 01-01-2005")]
+                    ErrorMessage = "Date of Birth Must be between 01-01-1900 and 01-01-2090")]
         [DisplayFormat(DataFormatString = "{0:d}", ApplyFormatInEditMode = true)]
         public DateTime? DateOfBirth { get; set; }
         [Required]

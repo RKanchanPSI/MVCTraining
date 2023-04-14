@@ -14,7 +14,8 @@ namespace MVC_Training1.Controllers
         {
             return View();
         }
-        public ActionResult Result(AddOrSubtractModels data, string command) {
+        [HttpPost]
+        public ActionResult Index(AddOrSubtractModels data, string command) {
             if( command == "Add")
             {
                 data.Result = data.FirstNumber + data.SecondNumber;

@@ -5,7 +5,7 @@
 }
 
 <h2>Add or Subtract</h2>
-@using (Html.BeginForm("Result", "AddOrSubtract"))
+@using (Html.BeginForm("Index", "AddOrSubtract"))
 {
     <div class="form-group">
         @Html.LabelFor(m => m.FirstNumber)
@@ -17,6 +17,15 @@
     </div>
     <input type="submit" class="btn btn-primary" value="Add" name="command">
     <input type="submit" class="btn btn-success" value="Subtract" name="command">
+}
+@if (Model != null)
+{
+<h2>@(Model.Operation) is:</h2>
+<ul>
+    <li>
+        @Model.Result
+    </li>
+</ul>
 }
 
 

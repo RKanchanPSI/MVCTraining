@@ -35,3 +35,7 @@
     </div>
     <button class="btn" type="submit" value="submit">Validate</button>
 }
+@if (ViewBag.Validated == true)
+            {
+                <div>The result : @ViewBag.Validate </div>
+            }

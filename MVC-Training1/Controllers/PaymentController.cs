@@ -15,10 +15,10 @@ namespace MVC_Training1.Controllers
             if (!ModelState.IsValid)
             {
                 return View("AddCard", PaymentMode);
-
             }
-            ModelState.Clear();
-            return View();
+            ViewBag.Validated = true;
+            ViewBag.Validate = "Valid";
+            return View("AddCard", PaymentMode);
         }
     }
 }

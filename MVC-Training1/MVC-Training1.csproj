@@ -297,7 +297,6 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\ButtonColor\Index.cshtml" />
     <Content Include="Views\AddOrSubtract\Index.cshtml" />
-    <Content Include="Views\AddOrSubtract\Result.cshtml" />
     <Content Include="Views\Store\Index.cshtml" />
     <Content Include="Views\Store\view.cshtml" />
     <Content Include="Views\Payment\AddCard.cshtml" />
